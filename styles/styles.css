@@ -388,10 +388,13 @@ section {
 
 .contact-content {
   display: flex;
+  flex-direction: column;
   padding-top: 3.5rem;
 }
 .contact-content .left-content {
-  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .contact-content .left-content h4 {
   margin-top: 1rem;
@@ -474,6 +477,10 @@ section {
 .contact-content .right-content .submit-btn {
   display: flex;
   justify-content: flex-start;
+}
+#send:hover{
+  background-color:var(--color-secondary);
+  color: var(--color-white);
 }
 
 /*independed components*/
@@ -651,4 +658,4 @@ section {
     margin-left: 0;
     margin-top: 1.5rem;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
