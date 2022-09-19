@@ -116,7 +116,8 @@ section {
     transform: translateY(0) scaleY(1);
   }
 }
-
+/*---------------------------------------*/
+/*control of icons*/
 .controlls {
   position: fixed;
   z-index: 10;
@@ -153,7 +154,7 @@ section {
   color: var(--color-grey-2);
   pointer-events: none;
 }
-
+/*light dark mode icon*/
 .theme-btn {
   top: 5%;
   right: 3%;
@@ -177,8 +178,8 @@ section {
   color: var(--color-grey-2);
   pointer-events: none;
 }
-
-/*header-content*/
+/*------------------------------------------*/
+/*header-section*/
 .header-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -198,6 +199,7 @@ section {
   left: 0;
   top: 0;
   z-index: -1;
+  /*clip path under my photo*/
   -webkit-clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
           clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
 }
@@ -329,7 +331,7 @@ section {
   width: 100%;
   height: 300px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 15px;
 }
 .portfolios .portfolio-item .hover-item {
@@ -495,9 +497,6 @@ section {
   background-color:var(--color-secondary);
   color: var(--color-white);
 }
-
-/*independed components*/
-/*if I want to make download cv*/
 /*-------------------------------*/
 .main-title {
   text-align: center;
@@ -523,6 +522,7 @@ section {
   font-size: 6.3rem;
   text-transform: uppercase;
 }
+/*Responsiv design för mobile phones */
 
 @media screen and (max-width: 600px) {
   .about-me {
@@ -569,6 +569,7 @@ section {
     font-size: 3rem;
   }
 }
+
 @media screen and (max-width: 700px) {
   .section {
     padding: 7rem 3rem;
