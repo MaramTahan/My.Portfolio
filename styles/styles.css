@@ -94,21 +94,13 @@ section {
   transform: translateY(0);
   scale: 1;
 }
-
+/*Animation of icons section*/
 .active {
   display: block;
-  -webkit-animation: scaleAnim is ease-in-out;
-          animation: scaleAnim is ease-in-out; /*please check about this property*/
+  animation: animationMove 1s ease-in-out;
 }
-@-webkit-keyframes scaleAnim {
-  0% {
-    transform: translateY(-100%) scaleY(0);
-  }
-  100% {
-    transform: translateY(0) scaleY(1);
-  }
-}
-@keyframes scaleAnim {
+
+@keyframes animationMove {
   0% {
     transform: translateY(-100%) scaleY(0);
   }
